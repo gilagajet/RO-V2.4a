@@ -35,6 +35,6 @@ sed -i 's/3.openwrt.pool.ntp.org/my.pool.ntp.org/g' package/base-files/files/bin
 
 
 ###Script
-wget https://raw.githubusercontent.com/gilagajet/gen/xray-1.5.4/import_feeds.sh
+wget https://raw.githubusercontent.com/gilagajet/gen/xray-latest/import_feeds.sh
 chmod +x import_feeds.sh
 ./import_feeds.sh
