@@ -339,6 +339,21 @@ uci delete network.wan6
 uci commit
 /etc/init.d/network restart
 
+#-----------------------------------------------------------------------------
+
+# VNStat Data Folder
+rm -r /etc/config/vnstat
+
+cat << 'EOF' >> /etc/config/vnstat
+config vnstat
+        list interface 'br-lan'
+EOF
+
+mkdir /vnstat
+sed -i 's/;DatabaseDir "\/var\/lib\/vnstat"/DatabaseDir "\/vnstat"/g' /etc/vnstat.conf
+
+#-----------------------------------------------------------------------------
+
 exit 0
 
 # cat /etc/sysctl.d/* | grep -v '^#'
