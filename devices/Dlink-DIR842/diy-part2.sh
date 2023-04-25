@@ -27,14 +27,3 @@ sed -i 's/0.openwrt.pool.ntp.org/time.google.com/g' package/base-files/files/bin
 sed -i 's/1.openwrt.pool.ntp.org/time.cloudflare.com/g' package/base-files/files/bin/config_generate
 sed -i 's/2.openwrt.pool.ntp.org/clock.sjc.he.net/g' package/base-files/files/bin/config_generate
 sed -i 's/3.openwrt.pool.ntp.org/my.pool.ntp.org/g' package/base-files/files/bin/config_generate
-
-###Extra
-
-#upx
-#git clone --depth=1 https://github.com/kuoruan/openwrt-upx.git /workdir/openwrt/staging_dir/host/bin/upx
-
-
-###Script
-wget https://raw.githubusercontent.com/gilagajet/gen/xray-latest/import_feeds.sh
-chmod +x import_feeds.sh
-./import_feeds.sh
