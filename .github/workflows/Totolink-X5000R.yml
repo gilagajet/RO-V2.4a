@@ -20,7 +20,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: v22.03.3
+  REPO_BRANCH: v22.03.4
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Totolink-X5000R/config.v22
   DIY_P1_SH: devices/Totolink-X5000R/diy-part1.sh
@@ -93,7 +93,7 @@ jobs:
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/lean.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/mwan.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openclash.config >> openwrt/.config
-        #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openvpn-mbedtls.config >> openwrt/.config
+        curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openvpn-mbedtls.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openvpn-wolfssl.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openvpn.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/passwall-lite.config >> openwrt/.config
