@@ -20,7 +20,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: v22.03.3
+  REPO_BRANCH: v22.03.5
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Totolink-X5000R/config.v22
   DIY_P1_SH: devices/Totolink-X5000R/diy-part1.sh
@@ -199,7 +199,7 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
         
     - name: Delete workflow runs
-      uses: Mattraks/delete-workflow-runs@main
+      uses: Mattraks/delete-workflow-runs@v2
       with:
         retain_days: 1
         keep_minimum_runs: 3

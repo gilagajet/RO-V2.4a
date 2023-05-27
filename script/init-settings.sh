@@ -63,6 +63,9 @@ echo | tee -a /etc/config/firewall
 echo "iptables -t mangle -A PREROUTING -j TTL --ttl-set 65" | tee -a /etc/firewall.user
 echo "nft add rule inet fw4 mangle_forward oifname usb0 ip ttl set 65" | tee -a /etc/firewall.user
 echo "nft add rule inet fw4 mangle_forward oifname wan ip ttl set 65" | tee -a /etc/firewall.user
+echo "nft add rule inet fw4 mangle_forward oifname wlan0 ip ttl set 65" | tee -a /etc/firewall.user
+echo "nft add rule inet fw4 mangle_forward oifname wlan1 ip ttl set 65" | tee -a /etc/firewall.user
+
 
 /etc/init.d/firewall restart
 
