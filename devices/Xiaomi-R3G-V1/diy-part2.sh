@@ -18,7 +18,7 @@ sed -i 's/wireless.radio${devidx}.disabled=1/wireless.radio${devidx}.disabled=0/
 
 # Version Update
 sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
-echo "DISTRIB_DESCRIPTION='GilaGajet build $(TZ=UTC+8 date "+%Y.%m") '" >> package/base-files/files/etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='GilaGajet build $(TZ=UTC+8 date "+%Y.%m") Lite'" >> package/base-files/files/etc/openwrt_release
 sed -i '/DISTRIB_REVISION/d' package/base-files/files/etc/openwrt_release
 echo "DISTRIB_REVISION='[OpenWRT v22.03.5]'" >> package/base-files/files/etc/openwrt_release
 
@@ -100,15 +100,6 @@ svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go feeds/p
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
 
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/brook feeds/packages/net/brook
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/chinadns-ng feeds/packages/net/chinadns-ng
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/dns2tcp feeds/packages/net/dns2tcp
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/hysteria feeds/packages/net/hysteria
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/ssocks feeds/packages/net/ssocks
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/trojan-go feeds/packages/net/trojan-go
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/trojan-plus feeds/packages/net/trojan-plus
-#svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/sagernet-core feeds/packages/net/sagernet-core
-
 svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
 svn export https://github.com/fw876/helloworld/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
@@ -120,7 +111,7 @@ svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/n
 svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
 svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
-svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-175-mp/xray-core feeds/packages/net/xray-core
+svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-1510/xray-core feeds/packages/net/xray-core
 svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
 svn export https://github.com/fw876/helloworld/trunk/lua-neturl feeds/packages/net/lua-neturl
 svn export https://github.com/immortalwrt/packages/trunk/net/dns2socks feeds/packages/net/dns2socks
@@ -145,8 +136,6 @@ git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClas
 
 # luci-app-passwall
 #svn export https://github.com/solomonricky/openwrt-passwall/branches/luci-nodns/luci-app-passwall feeds/luci/applications/luci-app-passwall
-#svn co https://github.com/NueXini/NueXini_Packages/tags/v20220620/luci-app-passwall feeds/luci/applications/luci-app-passwall
-#svn export https://github.com/arqam999/pass/branches/preset/luci-app-passwall feeds/luci/applications/luci-app-passwall
 svn export https://github.com/miaozilong/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # luci-app-passwall2
