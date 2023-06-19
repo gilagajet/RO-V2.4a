@@ -91,23 +91,14 @@ rm -rf ./feeds/packages/net/pdnsd-alt
 rm -rf ./feeds/packages/net/redsocks2
 
 # Dependencies
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/brook feeds/packages/net/brook
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
-#svn export https://github.com/xiaorouji/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
-
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/brook feeds/packages/net/brook
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/chinadns-ng feeds/packages/net/chinadns-ng
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/dns2tcp feeds/packages/net/dns2tcp
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/hysteria feeds/packages/net/hysteria
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/ssocks feeds/packages/net/ssocks
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/trojan-go feeds/packages/net/trojan-go
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/trojan-plus feeds/packages/net/trojan-plus
-svn export https://github.com/NueXini/NueXini_Packages/tags/v20220620/sagernet-core feeds/packages/net/sagernet-core
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/brook feeds/packages/net/brook
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
+svn export https://github.com/xiaorouji/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
 
 svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
@@ -145,8 +136,7 @@ git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClas
 
 # luci-app-passwall
 #svn export https://github.com/solomonricky/openwrt-passwall/branches/luci-nodns/luci-app-passwall feeds/luci/applications/luci-app-passwall
-#svn co https://github.com/NueXini/NueXini_Packages/tags/v20220620/luci-app-passwall feeds/luci/applications/luci-app-passwall
-svn export https://github.com/arqam999/pass/branches/preset/luci-app-passwall feeds/luci/applications/luci-app-passwall
+svn export https://github.com/miaozilong/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # luci-app-passwall2
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 feeds/luci/applications/luci-app-passwall2
