@@ -136,8 +136,7 @@ git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClas
 
 # luci-app-passwall
 #svn export https://github.com/solomonricky/openwrt-passwall/branches/luci-nodns/luci-app-passwall feeds/luci/applications/luci-app-passwall
-svn export https://github.com/arqam999/pass/branches/preset/luci-app-passwall feeds/luci/applications/luci-app-passwall
-#svn export https://github.com/miaozilong/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
+svn export https://github.com/miaozilong/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
 # luci-app-passwall2
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 feeds/luci/applications/luci-app-passwall2
