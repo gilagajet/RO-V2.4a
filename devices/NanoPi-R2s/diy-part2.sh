@@ -91,14 +91,46 @@ rm -rf ./feeds/packages/net/pdnsd-alt
 rm -rf ./feeds/packages/net/redsocks2
 
 # Dependencies
+rm -rf ./feeds/packages/net/brook
+rm -rf ./feeds/packages/net/chinadns-ng
+rm -rf ./feeds/packages/net/dns2socks
+rm -rf ./feeds/packages/net/ipt2socks
+rm -rf ./feeds/packages/net/kcptun
+rm -rf ./feeds/packages/net/microsocks
+rm -rf ./feeds/packages/net/naiveproxy
+rm -rf ./feeds/packages/net/openssl1.1
+rm -rf ./feeds/packages/net/pdnsd-alt
+rm -rf ./feeds/packages/net/shadowsocksr-libev
+rm -rf ./feeds/packages/net/simple-obfs
+rm -rf ./feeds/packages/net/ssocks
+rm -rf ./feeds/packages/net/tcping
+rm -rf ./feeds/packages/net/trojan-go
+rm -rf ./feeds/packages/net/trojan-plus
+rm -rf ./feeds/packages/net/trojan
+rm -rf ./feeds/packages/net/v2ray-plugin
+rm -rf ./feeds/packages/net/v2ray
+rm -rf ./feeds/packages/net/xray
+
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/brook feeds/packages/net/brook
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/dns2socks feeds/packages/net/dns2socks
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/ipt2socks feeds/packages/net/ipt2socks
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/kcptun feeds/packages/net/kcptun
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/microsocks feeds/packages/net/microsocks
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/naiveproxy feeds/packages/net/naiveproxy
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/openssl1.1 feeds/packages/net/openssl1.1
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/pdnsd-alt feeds/packages/net/pdnsd-alt 
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/simple-obfs feeds/packages/net/simple-obfs
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/tcping feeds/packages/net/tcping
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan feeds/packages/net/trojan
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/packages/net/v2ray
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/xray feeds/packages/net/xray
+
 
 svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
@@ -107,14 +139,12 @@ svn export https://github.com/fw876/helloworld/trunk/shadowsocksr-libev feeds/pa
 svn export https://github.com/fw876/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
 svn export https://github.com/fw876/helloworld/trunk/tcping feeds/packages/net/tcping
 svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
-#svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
+svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
+svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
+svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
-rm -rf ./feeds/packages/net/v2ray
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/packages/net/v2ray
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+
 
 svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-1510/xray-core feeds/packages/net/xray-core
 svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
