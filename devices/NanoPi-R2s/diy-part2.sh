@@ -107,15 +107,15 @@ svn export https://github.com/fw876/helloworld/trunk/shadowsocksr-libev feeds/pa
 svn export https://github.com/fw876/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
 svn export https://github.com/fw876/helloworld/trunk/tcping feeds/packages/net/tcping
 svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
-#svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
+svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
+svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
+svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
-svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-core feeds/packages/net/v2ray-core
-svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-geodata feeds/packages/net/v2ray-geodata
-svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-plugin feeds/packages/net/v2ray-plugin
-svn co https://github.com/NueXini/NueXini_Packages/v20220620//v2raya feeds/packages/net/v2raya
+#svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-core feeds/packages/net/v2ray-core
+#svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-geodata feeds/packages/net/v2ray-geodata
+#svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-plugin feeds/packages/net/v2ray-plugin
+#svn co https://github.com/NueXini/NueXini_Packages/v20220620//v2raya feeds/packages/net/v2raya
 
 svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-1510/xray-core feeds/packages/net/xray-core
 svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
