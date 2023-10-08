@@ -107,11 +107,12 @@ svn export https://github.com/fw876/helloworld/trunk/shadowsocksr-libev feeds/pa
 svn export https://github.com/fw876/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
 svn export https://github.com/fw876/helloworld/trunk/tcping feeds/packages/net/tcping
 svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
-svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
-svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
-svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
-svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
+#svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
+#svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
+#svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+#svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
+rm -rf ./feeds/packages/net/v2ray
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/packages/net/v2ray
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 
