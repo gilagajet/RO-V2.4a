@@ -113,8 +113,8 @@ svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/t
 #svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
 rm -rf ./feeds/packages/net/v2ray
-svn export https://github.com/miaozilong/openwrt-passwall/branches/packages/v2ray feeds/packages/net/v2ray
-svn export https://github.com/miaozilong/openwrt-passwall/branches/packages/v2ray-plugin feeds/packages/net/v2ray-plugin
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/packages/net/v2ray
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 
 svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-1510/xray-core feeds/packages/net/xray-core
 svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
