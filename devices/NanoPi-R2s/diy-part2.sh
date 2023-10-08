@@ -195,8 +195,7 @@ svn export https://github.com/immortalwrt/luci/branches/master/applications/luci
 svn export https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/ipv6-helper package/addon/ipv6-helper
 
 # Fix Golang
-#rm -rf ./feeds/packages/lang/golang
-#svn export https://github.com/openwrt/packages/branches/master/lang/golang feeds/packages/lang
+go env -w GO111MODULE=off
 
 # Change "Allow connection to 65535"
 sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
