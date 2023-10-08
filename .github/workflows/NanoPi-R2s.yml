@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: v22.03.4
+  REPO_BRANCH: v22.03.5
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/NanoPi-R2s/config.v22
   DIY_P1_SH: devices/NanoPi-R2s/diy-part1.sh
@@ -45,9 +45,9 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-        sudo apt-mark hold grub-efi-amd64-signed
-        sudo apt-get update --fix-missing
-        sudo apt-get upgrade
+        sudo -E apt-mark hold grub-efi-amd64-signed
+        sudo -E apt-get update --fix-missing
+        sudo -E apt-get upgrade
         sudo -E apt-get -qq install build-essential ccache ecj fastjar file g++ gawk gettext git java-propose-classpath libelf-dev libncurses5-dev libncursesw5-dev libssl-dev python python2.7-dev python3 unzip wget python-distutils-extra python3-setuptools python3-dev rsync subversion swig time xsltproc zlib1g-dev zip 
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
         sudo -E apt-get -qq autoremove --purge
