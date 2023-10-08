@@ -112,10 +112,8 @@ svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/package
 svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
-#svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-core feeds/packages/net/v2ray-core
-#svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-geodata feeds/packages/net/v2ray-geodata
-#svn co https://github.com/NueXini/NueXini_Packages/v20220620/v2ray-plugin feeds/packages/net/v2ray-plugin
-#svn co https://github.com/NueXini/NueXini_Packages/v20220620//v2raya feeds/packages/net/v2raya
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/packages/net/v2ray
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 
 svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-1510/xray-core feeds/packages/net/xray-core
 svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
