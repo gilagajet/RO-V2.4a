@@ -128,7 +128,7 @@ svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-go feeds/
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan feeds/packages/net/trojan
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/packages/net/v2ray
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+#svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/xray feeds/packages/net/xray
 
 
@@ -141,7 +141,7 @@ svn export https://github.com/fw876/helloworld/trunk/shadowsocks-rust feeds/pack
 #svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
 svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
 svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
-#svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
 
@@ -196,7 +196,7 @@ svn export https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/ipv6
 
 # Fix Golang
 rm -rf ./feeds/packages/lang/golang
-svn co https://github.com/openwrt/packages/branches/master/lang/golang feeds/packages/lang
+svn export https://github.com/openwrt/packages/branches/master/lang/golang feeds/packages/lang
 
 # Change "Allow connection to 65535"
 sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
