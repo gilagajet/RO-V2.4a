@@ -91,13 +91,13 @@ rm -rf ./feeds/packages/net/pdnsd-alt
 rm -rf ./feeds/packages/net/redsocks2
 
 # Dependencies
-rm -rf ./feeds/packages/net/brook
-rm -rf ./feeds/packages/net/chinadns-ng
-rm -rf ./feeds/packages/net/dns2socks
-rm -rf ./feeds/packages/net/ipt2socks
-rm -rf ./feeds/packages/net/kcptun
-rm -rf ./feeds/packages/net/microsocks
-rm -rf ./feeds/packages/net/naiveproxy
+#rm -rf ./feeds/packages/net/brook
+#rm -rf ./feeds/packages/net/chinadns-ng
+#rm -rf ./feeds/packages/net/dns2socks
+#rm -rf ./feeds/packages/net/ipt2socks
+#rm -rf ./feeds/packages/net/kcptun
+#rm -rf ./feeds/packages/net/microsocks
+#rm -rf ./feeds/packages/net/naiveproxy
 rm -rf ./feeds/packages/net/openssl1.1
 rm -rf ./feeds/packages/net/pdnsd-alt
 rm -rf ./feeds/packages/net/shadowsocksr-libev
