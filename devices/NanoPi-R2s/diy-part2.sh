@@ -197,6 +197,10 @@ svn export https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/ipv6
 # Change "Allow connection to 65535"
 sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
+# Go Fix
+rm -rf ./feeds/packages/lang/golang
+svn export https://github.com/openwrt/packages/branches/openwrt-23.05/lang/golang feeds/packages/lang/golang
+
 # Update and Install Feeds
 ./scripts/feeds update -a
 ./scripts/feeds install -a -f
