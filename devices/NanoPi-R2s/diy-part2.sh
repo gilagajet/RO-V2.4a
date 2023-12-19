@@ -168,10 +168,10 @@ svn export https://github.com/miaozilong/openwrt-passwall/trunk/xray feeds/packa
 #svn export https://github.com/Mattraks/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
 svn export https://github.com/Mattraks/helloworld/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
-#svn export https://github.com/Mattraks/helloworld/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-#svn export https://github.com/Mattraks/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
-#svn export https://github.com/Mattraks/helloworld/trunk/tcping feeds/packages/net/tcping
-#svn export https://github.com/Mattraks/helloworld/trunk/trojan feeds/packages/net/trojan
+svn export https://github.com/Mattraks/helloworld/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+svn export https://github.com/Mattraks/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
+svn export https://github.com/Mattraks/helloworld/trunk/tcping feeds/packages/net/tcping
+svn export https://github.com/Mattraks/helloworld/trunk/trojan feeds/packages/net/trojan
 svn export https://github.com/Mattraks/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
 svn export https://github.com/Mattraks/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
 svn export https://github.com/Mattraks/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
