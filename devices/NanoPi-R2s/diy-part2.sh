@@ -132,26 +132,57 @@ svn export https://github.com/miaozilong/openwrt-passwall/trunk/v2ray feeds/pack
 svn export https://github.com/miaozilong/openwrt-passwall/trunk/xray feeds/packages/net/xray
 
 
-#svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
+##svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
+#svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+#svn export https://github.com/fw876/helloworld/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
+##svn export https://github.com/fw876/helloworld/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+##svn export https://github.com/fw876/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
+##svn export https://github.com/fw876/helloworld/trunk/tcping feeds/packages/net/tcping
+##svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
+#svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
+#svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
+#svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+#svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
+
+
+
+
+
+#svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-175-mp/xray-core feeds/packages/net/xray-core
+#svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
+#svn export https://github.com/fw876/helloworld/trunk/lua-neturl feeds/packages/net/lua-neturl
+##svn export https://github.com/immortalwrt/packages/trunk/net/dns2socks feeds/packages/net/dns2socks
+##svn export https://github.com/immortalwrt/packages/trunk/net/microsocks feeds/packages/net/microsocks
+##svn export https://github.com/fw876/helloworld/trunk/ipt2socks feeds/packages/net/ipt2socks
+##svn export https://github.com/immortalwrt/packages/trunk/net/pdnsd-alt feeds/packages/net/pdnsd-alt
+#svn export https://github.com/immortalwrt/packages/trunk/net/redsocks2 feeds/packages/net/redsocks2
+#svn export https://github.com/immortalwrt/packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
+##svn export https://github.com/immortalwrt/packages/trunk/net/kcptun feeds/packages/net/kcptun
+#git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git feeds/packages/net/lua-maxminddb
+#svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/kernel/shortcut-fe
+#svn export https://github.com/immortalwrt/packages/trunk/net/dnsforwarder feeds/packages/net/dnsforwarder
+
+
+#########test#######
+
+#svn export https://github.com/Mattraks/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
-svn export https://github.com/fw876/helloworld/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
-#svn export https://github.com/fw876/helloworld/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-#svn export https://github.com/fw876/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
-#svn export https://github.com/fw876/helloworld/trunk/tcping feeds/packages/net/tcping
-#svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
-svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
-svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
-svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
-svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
-
-
+svn export https://github.com/Mattraks/helloworld/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
+#svn export https://github.com/Mattraks/helloworld/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+#svn export https://github.com/Mattraks/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
+#svn export https://github.com/Mattraks/helloworld/trunk/tcping feeds/packages/net/tcping
+#svn export https://github.com/Mattraks/helloworld/trunk/trojan feeds/packages/net/trojan
+svn export https://github.com/Mattraks/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
+svn export https://github.com/Mattraks/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
+svn export https://github.com/Mattraks/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+svn export https://github.com/Mattraks/helloworld/trunk/v2raya feeds/packages/net/v2raya
 
 svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-175-mp/xray-core feeds/packages/net/xray-core
-svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
-svn export https://github.com/fw876/helloworld/trunk/lua-neturl feeds/packages/net/lua-neturl
+svn export https://github.com/Mattraks/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
+svn export https://github.com/Mattraks/helloworld/trunk/lua-neturl feeds/packages/net/lua-neturl
 #svn export https://github.com/immortalwrt/packages/trunk/net/dns2socks feeds/packages/net/dns2socks
 #svn export https://github.com/immortalwrt/packages/trunk/net/microsocks feeds/packages/net/microsocks
-#svn export https://github.com/fw876/helloworld/trunk/ipt2socks feeds/packages/net/ipt2socks
+#svn export https://github.com/Mattraks/helloworld/trunk/ipt2socks feeds/packages/net/ipt2socks
 #svn export https://github.com/immortalwrt/packages/trunk/net/pdnsd-alt feeds/packages/net/pdnsd-alt
 svn export https://github.com/immortalwrt/packages/trunk/net/redsocks2 feeds/packages/net/redsocks2
 svn export https://github.com/immortalwrt/packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
@@ -159,6 +190,9 @@ svn export https://github.com/immortalwrt/packages/trunk/net/https-dns-proxy fee
 git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git feeds/packages/net/lua-maxminddb
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/kernel/shortcut-fe
 svn export https://github.com/immortalwrt/packages/trunk/net/dnsforwarder feeds/packages/net/dnsforwarder
+
+
+#########end test#######
 
 # luci-app-bypass
 #svn export https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass feeds/luci/applications/luci-app-bypass
