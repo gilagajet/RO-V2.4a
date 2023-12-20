@@ -85,17 +85,17 @@ git clone -b master --depth 1 https://github.com/NateLol/luci-app-oled.git packa
 
 git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClash.git package/new/luci-app-openclash
 
-cp -rf ../passwall_luci/luci-app-passwall ./package/new/luci-app-passwall
-cp -rf ../passwall_pkg/tcping ./package/new/tcping
-cp -rf ../passwall_pkg/trojan-go ./package/new/trojan-go
-cp -rf ../passwall_pkg/brook ./package/new/brook
-cp -rf ../passwall_pkg/ssocks ./package/new/ssocks
-cp -rf ../passwall_pkg/microsocks ./package/new/microsocks
-cp -rf ../passwall_pkg/dns2socks ./package/new/dns2socks
-cp -rf ../passwall_pkg/ipt2socks ./package/new/ipt2socks
-cp -rf ../passwall_pkg/pdnsd-alt ./package/new/pdnsd-alt
-cp -rf ../OpenWrt-Add/trojan-plus ./package/new/trojan-plus
-cp -rf ../passwall_pkg/xray-plugin ./package/new/xray-plugin
+cp -rf passwall_luci/luci-app-passwall ./package/new/luci-app-passwall
+cp -rf passwall_pkg/tcping ./package/new/tcping
+cp -rf passwall_pkg/trojan-go ./package/new/trojan-go
+cp -rf passwall_pkg/brook ./package/new/brook
+cp -rf passwall_pkg/ssocks ./package/new/ssocks
+cp -rf passwall_pkg/microsocks ./package/new/microsocks
+cp -rf passwall_pkg/dns2socks ./package/new/dns2socks
+cp -rf passwall_pkg/ipt2socks ./package/new/ipt2socks
+cp -rf passwall_pkg/pdnsd-alt ./package/new/pdnsd-alt
+cp -rf OpenWrt-Add/trojan-plus ./package/new/trojan-plus
+cp -rf passwall_pkg/xray-plugin ./package/new/xray-plugin
 
 cp -rf ../lede_luci/applications/luci-app-ramfree ./package/new/luci-app-ramfree
 
