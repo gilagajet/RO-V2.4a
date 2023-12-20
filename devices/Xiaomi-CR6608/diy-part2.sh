@@ -53,14 +53,15 @@ sed -i 's/3.openwrt.pool.ntp.org/my.pool.ntp.org/g' package/base-files/files/bin
 
 
 # Dependencies
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/brook feeds/packages/net/brook
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
+
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/brook feeds/packages/net/brook
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
+svn export https://github.com/miaozilong/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
 
 svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
