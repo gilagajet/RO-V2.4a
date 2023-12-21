@@ -20,7 +20,7 @@ sed -i 's/wireless.radio${devidx}.disabled=1/wireless.radio${devidx}.disabled=0/
 sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
 echo "DISTRIB_DESCRIPTION='GilaGajet build $(TZ=UTC+8 date "+%Y.%m") '" >> package/base-files/files/etc/openwrt_release
 sed -i '/DISTRIB_REVISION/d' package/base-files/files/etc/openwrt_release
-echo "DISTRIB_REVISION='[OpenWRT v23.05.2 Beta]'" >> package/base-files/files/etc/openwrt_release
+echo "DISTRIB_REVISION='[OpenWRT v22.03.6 Beta]'" >> package/base-files/files/etc/openwrt_release
 
 # Update TimeZone
 sed -i 's/0.openwrt.pool.ntp.org/time.google.com/g' package/base-files/files/bin/config_generate
@@ -128,6 +128,9 @@ svn export https://github.com/immortalwrt/luci/branches/master/applications/luci
 
 # IPv6 Helper
 svn export https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/ipv6-helper package/addon/ipv6-helper
+
+# Change "Allow connection to 65535"
+sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
 # Update and Install Feeds
 ./scripts/feeds update -a
