@@ -59,7 +59,9 @@ svn export https://github.com/quango-web/openwrt-passwall/trunk/chinadns-ng feed
 svn export https://github.com/quango-web/openwrt-passwall/trunk/dns2socks feeds/packages/net/dns2socks
 svn export https://github.com/quango-web/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
 svn export https://github.com/quango-web/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
-svn export https://github.com/quango-web/openwrt-passwall/trunk/ipt2socks feeds/packages/net/ipt2socks
+
+svn export https://github.com/fw876/helloworld/trunk/ipt2socks feeds/packages/net/ipt2socks
+
 svn export https://github.com/quango-web/openwrt-passwall/trunk/microsocks feeds/packages/net/microsocks
 svn export https://github.com/quango-web/openwrt-passwall/trunk/naiveproxy feeds/packages/net/naiveproxy
 svn export https://github.com/quango-web/openwrt-passwall/trunk/pdnsd-alt feeds/packages/net/pdnsd-alt
