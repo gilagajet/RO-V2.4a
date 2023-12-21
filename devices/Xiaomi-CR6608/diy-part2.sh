@@ -54,36 +54,40 @@ sed -i 's/3.openwrt.pool.ntp.org/my.pool.ntp.org/g' package/base-files/files/bin
 
 # Dependencies
 
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/brook feeds/packages/net/brook
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
-svn export https://github.com/miaozilong/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
+svn export https://github.com/quango-web/openwrt-passwall/trunk/brook feeds/packages/net/brook
+svn export https://github.com/quango-web/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
+svn export https://github.com/quango-web/openwrt-passwall/trunk/dns2socks feeds/packages/net/dns2socks
+svn export https://github.com/quango-web/openwrt-passwall/trunk/dns2tcp feeds/packages/net/dns2tcp
+svn export https://github.com/quango-web/openwrt-passwall/trunk/hysteria feeds/packages/net/hysteria
+svn export https://github.com/quango-web/openwrt-passwall/trunk/ipt2socks feeds/packages/net/ipt2socks
+svn export https://github.com/quango-web/openwrt-passwall/trunk/microsocks feeds/packages/net/microsocks
+svn export https://github.com/quango-web/openwrt-passwall/trunk/naiveproxy feeds/packages/net/naiveproxy
+svn export https://github.com/quango-web/openwrt-passwall/trunk/pdnsd-alt feeds/packages/net/pdnsd-alt
+svn export https://github.com/quango-web/openwrt-passwall/trunk/sagernet-core feeds/packages/net/sagernet-core
+svn export https://github.com/quango-web/openwrt-passwall/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
+svn export https://github.com/quango-web/openwrt-passwall/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
+svn export https://github.com/quango-web/openwrt-passwall/trunk/simple-obfs feeds/packages/net/simple-obfs
+svn export https://github.com/quango-web/openwrt-passwall/trunk/sing-box feeds/packages/net/sing-box
+svn export https://github.com/quango-web/openwrt-passwall/trunk/ssocks feeds/packages/net/ssocks
+svn export https://github.com/quango-web/openwrt-passwall/trunk/tcping feeds/packages/net/tcping
+svn export https://github.com/quango-web/openwrt-passwall/trunk/trojan-go feeds/packages/net/trojan-go
+svn export https://github.com/quango-web/openwrt-passwall/trunk/trojan-plus feeds/packages/net/trojan-plus
+svn export https://github.com/quango-web/openwrt-passwall/trunk/trojan feeds/packages/net/trojan
+svn export https://github.com/quango-web/openwrt-passwall/trunk/v2ray-core feeds/packages/net/v2ray-core
+svn export https://github.com/quango-web/openwrt-passwall/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
+svn export https://github.com/quango-web/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 
-svn export https://github.com/fw876/helloworld/trunk/naiveproxy feeds/packages/net/naiveproxy
-svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
-svn export https://github.com/fw876/helloworld/trunk/shadowsocks-rust feeds/packages/net/shadowsocks-rust
-svn export https://github.com/fw876/helloworld/trunk/shadowsocksr-libev feeds/packages/net/shadowsocksr-libev
-svn export https://github.com/fw876/helloworld/trunk/simple-obfs feeds/packages/net/simple-obfs
-svn export https://github.com/fw876/helloworld/trunk/tcping feeds/packages/net/tcping
-svn export https://github.com/fw876/helloworld/trunk/trojan feeds/packages/net/trojan
-svn export https://github.com/fw876/helloworld/trunk/v2ray-core feeds/packages/net/v2ray-core
-svn export https://github.com/fw876/helloworld/trunk/v2ray-geodata feeds/packages/net/v2ray-geodata
-svn export https://github.com/fw876/helloworld/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
-svn export https://github.com/fw876/helloworld/trunk/v2raya feeds/packages/net/v2raya
 svn export https://github.com/arqam999/openwrt-passwall/branches/xtls-175-mp/xray-core feeds/packages/net/xray-core
-svn export https://github.com/fw876/helloworld/trunk/xray-plugin feeds/packages/net/xray-plugin
+
+svn export https://github.com/quango-web/openwrt-passwall/trunk/xray-plugin feeds/packages/net/xray-plugin
+
+svn export https://github.com/immortalwrt/packages/trunk/net/shadowsocks-libev feeds/packages/net/shadowsocks-libev
+
 svn export https://github.com/fw876/helloworld/trunk/lua-neturl feeds/packages/net/lua-neturl
-svn export https://github.com/immortalwrt/packages/trunk/net/dns2socks feeds/packages/net/dns2socks
-svn export https://github.com/immortalwrt/packages/trunk/net/microsocks feeds/packages/net/microsocks
-svn export https://github.com/fw876/helloworld/trunk/ipt2socks feeds/packages/net/ipt2socks
-svn export https://github.com/immortalwrt/packages/trunk/net/pdnsd-alt feeds/packages/net/pdnsd-alt
 svn export https://github.com/immortalwrt/packages/trunk/net/redsocks2 feeds/packages/net/redsocks2
 svn export https://github.com/immortalwrt/packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
 svn export https://github.com/immortalwrt/packages/trunk/net/kcptun feeds/packages/net/kcptun
+
 git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git feeds/packages/net/lua-maxminddb
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/kernel/shortcut-fe
 svn export https://github.com/immortalwrt/packages/trunk/net/dnsforwarder feeds/packages/net/dnsforwarder
