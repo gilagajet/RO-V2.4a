@@ -47,13 +47,13 @@ sed -i 's/3.openwrt.pool.ntp.org/my.pool.ntp.org/g' package/base-files/files/bin
 
 
 
-#git clone -b packages --depth 1 https://github.com/xiaorouji/openwrt-passwall passwall_pkg
-#git clone -b luci --depth 1 https://github.com/miaozilong/openwrt-passwall passwall_luci
-#git clone -b master --depth 1 https://github.com/fw876/helloworld ssrp
+
+
+
+
 
 
 # Dependencies
-
 svn export https://github.com/quango-web/openwrt-passwall/trunk/brook feeds/packages/net/brook
 svn export https://github.com/quango-web/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
 svn export https://github.com/quango-web/openwrt-passwall/trunk/dns2socks feeds/packages/net/dns2socks
