@@ -92,6 +92,33 @@ git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git fee
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/shortcut-fe package/kernel/shortcut-fe
 svn export https://github.com/immortalwrt/packages/trunk/net/dnsforwarder feeds/packages/net/dnsforwarder
 
+# luci-app-cpufreq
+svn export -r 19495 https://github.com/immortalwrt/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+
+# luci-app-openclash
+git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClash.git feeds/luci/applications/luci-app-openclash
+
+# luci-app-passwall
+#svn export https://github.com/solomonricky/openwrt-passwall/branches/luci-nodns/luci-app-passwall feeds/luci/applications/luci-app-passwall
+svn export https://github.com/miaozilong/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
+
+# luci-app-passwall2
+svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 feeds/luci/applications/luci-app-passwall2
+
+# luci-app-ramfree
+svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-ramfree feeds/luci/applications/luci-app-ramfree
+
+#luci-app-turboacc
+#svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-turboacc feeds/luci/applications/luci-app-turboacc
+
+# luci-app-vssr
+git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-vssr.git feeds/luci/applications/luci-app-vssr
+
+# luci-app-zerotier
+svn export https://github.com/immortalwrt/luci/branches/master/applications/luci-app-zerotier feeds/luci/applications/luci-app-zerotier
+
+# IPv6 Helper
+svn export https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/ipv6-helper package/addon/ipv6-helper
 
 # Update and Install Feeds
 ./scripts/feeds update -a
