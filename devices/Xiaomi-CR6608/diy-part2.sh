@@ -53,7 +53,8 @@ git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-argon-config
 git clone -b master --depth 1 https://github.com/kiddin9/luci-theme-edge.git package/new/luci-theme-edge
 
 # Autocore
-svn export https://github.com/immortalwrt/immortalwrt/branches/openwrt-21.02/package/emortal/autocore feeds/packages/utils/autocore
+#svn export https://github.com/immortalwrt/immortalwrt/branches/openwrt-21.02/package/emortal/autocore feeds/packages/utils/autocore
+svn export https://github.com/breakings/OpenWrt/trunk/general/autocore feeds/packages/utils/autocore
 sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' feeds/packages/utils/autocore/files/generic/luci-mod-status-autocore.json
 
 # Coremark
@@ -119,14 +120,8 @@ git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClas
 # luci-app-passwall
 svn export https://github.com/miaozilong/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
-# luci-app-passwall2
-svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 feeds/luci/applications/luci-app-passwall2
-
 # luci-app-ramfree
 svn export https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-ramfree feeds/luci/applications/luci-app-ramfree
-
-#luci-app-turboacc
-svn export https://github.com/immortalwrt/luci/trunk/applications/luci-app-turboacc feeds/luci/applications/luci-app-turboacc
 
 # luci-app-zerotier
 svn export https://github.com/immortalwrt/luci/branches/master/applications/luci-app-zerotier feeds/luci/applications/luci-app-zerotier
