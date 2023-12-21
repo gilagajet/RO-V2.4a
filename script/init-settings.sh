@@ -41,6 +41,10 @@ uci commit system
 # run "myip" using terminal for use
 chmod +x /bin/myip
 
+# tweak by mssvpn
+chmod +x /etc/ram-mod.sh
+chmod +x /etc/run-nmod.sh
+
 #-----------------------------------------------------------------------------
 
 # Set Custom TTL (cat /proc/sys/net/ipv4/ip_default_ttl)
@@ -90,13 +94,16 @@ echo '# Clear PageCache' | tee -a /etc/crontabs/root
 echo '0 */2 * * * sync; echo 1 > /proc/sys/vm/drop_caches' | tee -a /etc/crontabs/root
 echo | tee -a /etc/crontabs/root
 echo '# Ping Loop' | tee -a /etc/crontabs/root
-echo '* * * * * ping 8.8.8.8' | tee -a /etc/crontabs/root
+echo '* * * * * ping 1.1.1.1' | tee -a /etc/crontabs/root
 echo | tee -a /etc/crontabs/root
 echo '# Stop Ping Flood' | tee -a /etc/crontabs/root
 echo "* * * * * pgrep ping | awk 'NR >= 3' | xargs -n1 kill" | tee -a /etc/crontabs/root
 echo | tee -a /etc/crontabs/root
 echo '# Clear Log' | tee -a /etc/crontabs/root
 echo "*/15 * * * * /etc/init.d/log restart >/dev/null 2>&1" | tee -a /etc/crontabs/root
+echo | tee -a /etc/crontabs/root
+echo '# Passwall Monitor by MSSVPN' | tee -a /etc/crontabs/root
+echo "* * * * * sh /etc/run-nmod.sh" | tee -a /etc/crontabs/root
 
 # Tweak2
 echo | tee -a /etc/sysctl.conf
