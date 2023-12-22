@@ -20,7 +20,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: v22.03.5
+  REPO_BRANCH: v22.03.6
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: devices/Xiaomi-R3G-V2/config.v22
   DIY_P1_SH: devices/Xiaomi-R3G-V2/diy-part1.sh
@@ -91,7 +91,7 @@ jobs:
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/l2tp.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/language.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/lean.config >> openwrt/.config
-        #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/mwan.config >> openwrt/.config
+        curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/mwan.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openclash.config >> openwrt/.config
         curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openvpn-mbedtls.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/openvpn-wolfssl.config >> openwrt/.config
