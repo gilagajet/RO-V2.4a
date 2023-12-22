@@ -41,10 +41,6 @@ uci commit system
 # run "myip" using terminal for use
 chmod +x /bin/myip
 
-# tweak by mssvpn
-chmod +x /etc/ram-mod.sh
-chmod +x /etc/run-nmod.sh
-
 #-----------------------------------------------------------------------------
 
 # Set Custom TTL (cat /proc/sys/net/ipv4/ip_default_ttl)
@@ -180,7 +176,7 @@ config global_forwarding
 	option udp_proxy_drop_ports 'disable'
 	option tcp_redir_ports '1:65535'
 	option udp_redir_ports '1:65535'
-	option accept_icmp '0'
+	option accept_icmp '1'
 	option tcp_proxy_way 'redirect'
 	option ipv6_tproxy '0'
 	option sniffing '1'
@@ -228,6 +224,22 @@ config shunt_rules 'BT'
 
 EOF
 sleep 1
+
+>/usr/share/passwall/rules/proxy_ip
+>/usr/share/passwall/rules/proxy_host
+>/usr/share/passwall/rules/domains_excluded
+>/usr/share/passwall/rules/direct_ip
+>/usr/share/passwall/rules/direct_host
+>/usr/share/passwall/rules/block_ip
+>/usr/share/passwall/rules/block_host
+>/usr/share/passwall/rules/gfwlist
+>/usr/share/passwall/rules/chnroute6
+>/usr/share/passwall/rules/chnroute
+>/usr/share/passwall/rules/chnlist
+
+# tweak by mssvpn
+chmod +x /etc/ram-mod.sh
+chmod +x /etc/run-nmod.sh
 
 #-----------------------------------------------------------------------------
 
@@ -284,7 +296,7 @@ return baseclass.extend({
 		projectlink.target = '_blank';
 		var corelink = document.createElement('a');
 		corelink.append('Shopee');
-		corelink.href = 'http://shp.ee/n8yf7jf';
+		corelink.href = 'https://shope.ee/LNZBIAxxS';
 		corelink.target = '_blank';
 		var sourcelink = document.createElement('placeholder');
 		sourcelink.append(projectlink);
