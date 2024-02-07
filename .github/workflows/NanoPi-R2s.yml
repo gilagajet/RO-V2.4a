@@ -45,9 +45,8 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
-        sudo -E apt-mark hold grub-efi-amd64-signed
-        sudo -E apt-get update --fix-missing
-        sudo -E apt-get full-upgrade
+        sudo -E apt-get -qq update
+        sudo -E apt-get -qq full-upgrade
         sudo -E apt-get -qq install build-essential ccache ecj fastjar file g++ gawk gettext git java-propose-classpath libelf-dev libncurses5-dev libncursesw5-dev libssl-dev python python2.7-dev python3 unzip wget python-distutils-extra python3-setuptools python3-dev rsync subversion swig time xsltproc zlib1g-dev zip 
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
         sudo -E apt-get -qq autoremove --purge
@@ -88,7 +87,7 @@ jobs:
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/bypass.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/extra.config >> openwrt/.config
-        curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/htop.config >> openwrt/.config
+        #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/htop.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/ipv6.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/l2tp.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/language.config >> openwrt/.config
@@ -110,7 +109,7 @@ jobs:
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/vssr.config >> openwrt/.config
         curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/wireguard.config >> openwrt/.config
         #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/xray.config >> openwrt/.config
-        #curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/zram.config >> openwrt/.config
+        curl https://raw.githubusercontent.com/gilagajet/plugin/master/config/zram.config >> openwrt/.config
         
     - name: Download package
       id: package
@@ -208,3 +207,4 @@ jobs:
     - name: Telegram push notification
       if: steps.organize.outputs.status == 'success' && !cancelled()
       run: curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}&text=Congratulations! Firmware ${{ env.DEVICE_SAVE_NAME }} successfully uploaded."
+      
